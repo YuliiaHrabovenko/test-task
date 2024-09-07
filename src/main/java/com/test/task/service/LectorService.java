@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
-public class LectureService {
+public class LectorService {
 
     private final LectorRepository lectorRepository;
 

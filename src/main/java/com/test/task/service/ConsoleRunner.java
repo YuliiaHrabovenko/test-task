@@ -18,7 +18,7 @@ import static com.test.task.util.StringUtil.toCamelCaseWithSingleSpaces;
 public class ConsoleRunner implements CommandLineRunner {
 
     private final DepartmentService departmentService;
-    private final LectureService lectureService;
+    private final LectorService lectorService;
 
     private final Scanner scanner = new Scanner(System.in);
     private final ConfigurableApplicationContext context;
@@ -70,7 +70,7 @@ public class ConsoleRunner implements CommandLineRunner {
                     case 5:
                         System.out.print("Global search by ");
                         String template = scanner.nextLine();
-                        String employeeNames = lectureService.getEmployeeNameByTemplate(template);
+                        String employeeNames = lectorService.getEmployeeNameByTemplate(template);
                         System.out.println(employeeNames);
                         break;
                     case 6:
